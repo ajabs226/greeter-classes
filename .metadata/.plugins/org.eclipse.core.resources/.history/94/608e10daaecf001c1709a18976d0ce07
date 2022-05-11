@@ -1,0 +1,42 @@
+
+public class Greeter {
+
+	// instance variable
+	public String greeting;
+
+	// getter & setter
+	public String getGreeting() {
+		return greeting;
+	}
+
+	public void setGreeting() {
+		this.greeting = greeting;
+	}
+
+	// constructor
+	public Greeter() {
+		
+	}
+	
+	public Greeter(String greeting) {
+		this.greeting = greeting;
+
+	}
+
+	@Override
+	public String toString() {
+		return greeting;
+
+	}
+
+}
+
+class JavaScriptGreeter extends Greeter {
+	public void setGreeting() {
+		super.setGreeting();
+		System.out.println("Simon Says " + greeting);
+		return;
+			
+	}
+
+}

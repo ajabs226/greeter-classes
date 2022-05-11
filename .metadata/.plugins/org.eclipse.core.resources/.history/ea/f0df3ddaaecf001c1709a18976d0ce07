@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class GreeterApp {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Choose a greeting: ");
+		String userGreet = scan.nextLine();
+		
+		System.out.println("Enter your name: ");
+		String userName = scan.nextLine();
+
+		String userGreeting = greet(userGreet + ", " + userName);
+		System.out.println(userGreeting);
+
+		String saysSimon = userGreeting;
+		String simon = simonSays(saysSimon);
+		System.out.println(simon);
+		
+		
+
+	}
+
+	public static String greet(String name) {
+		Greeter askName = new Greeter(name);
+		return askName.toString();
+	}
+	
+	public static String simonSays(String simon) {
+		Greeter addSimon = new JavaScriptGreeter();
+		addSimon.setGreeting();
+		return addSimon.toString();
+	}
+
+	
+	
+
+
+	
+}
+
+

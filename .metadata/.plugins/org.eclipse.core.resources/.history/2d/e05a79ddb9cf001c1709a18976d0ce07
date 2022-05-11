@@ -1,0 +1,41 @@
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GreeterAppTest {
+
+	@Test
+	void testUserGreet1() {
+		String greeting = "Hello";
+		String expected = "Hello";
+		String actual = GreeterApp.greet(greeting);
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testUserName1() {
+		String name = "Patrick";
+		String expected = "Patrick";
+		String actual = GreeterApp.greet(name);
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testUserGreet2() {
+		String greeting = "'Sup";
+		String expected = "'Sup";
+		String actual = GreeterApp.greet(greeting);
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testUserName2() {
+		String name = "Tiffany";
+		String expected = "Tiffany";
+		String actual = GreeterApp.greet(name);
+		assertEquals(expected, actual);
+	}
+
+}

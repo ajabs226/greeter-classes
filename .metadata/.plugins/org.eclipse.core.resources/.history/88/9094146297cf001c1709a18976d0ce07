@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class GreeterApp {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Choose a greeting: ");
+		String userGreet = scan.nextLine();
+		
+		System.out.println("Enter your name: ");
+		String userName = scan.nextLine();
+
+		String comp = greet(userName);
+		System.out.println(comp);
+
+	}
+
+	public static String greet(String name) {
+		Greeter askName = new Greeter(name);
+	//	String namer = askName.toString();	
+		return askName.toString();
+	}
+}

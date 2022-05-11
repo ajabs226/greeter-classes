@@ -1,0 +1,28 @@
+
+public class Greeter {
+
+	//instance variable
+	public String greeting;
+	public String name;
+	
+	//getter & setter
+	public String getGreeting() {
+		return greeting;
+	}
+	
+	public void setGreeting	() {
+		this.greeting = greeting;
+	}
+	
+	//constructor
+	public Greeter(String greeting, String name) {
+		this.greeting = greeting;
+		this.name = name;
+	}
+
+	/*
+	 * @Override public String toString() { return greeting; }
+	 */
+	
+	
+}
