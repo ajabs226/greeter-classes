@@ -1,0 +1,69 @@
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GreeterAppTest {
+
+	@Test
+	void testGreeting1() {
+		Greeter test1 = new Greeter("Hello");
+		String expected = "Hello, Patrick!";
+		String actual = test1.greet("Patrick");
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testGreeting2() {
+		Greeter test2 = new Greeter("'Sup");
+		String expected = "'Sup, Paul!";
+		String actual = test2.greet("Paul");
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testJavaScriptGreeter1() {
+		JavaScriptGreeter test3 = new JavaScriptGreeter("Hi");
+		String expected = "Simon Says, \"Hi, Tabitha!\"";
+		String actual = test3.greet("Tabitha");
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	void testJavaScriptGreeter2() {
+		JavaScriptGreeter test4 = new JavaScriptGreeter("Cherio");
+		String expected = "Simon Says, \"Go crazy, Steve!\"";
+		String actual = test4.greet("Kate");
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testLoudGreeter1() {
+		LoudGreeter test1 = new LoudGreeter("What's up");
+		String expected = "What's up, Greg!!!";
+		String actual = test1.greet("Greg");
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	void testLoudGreeter2() {
+		LoudGreeter test2 = new LoudGreeter("Waazzzaaaapphh");
+		String expected = "Waazzzaaaapphh, Napoleon!!!";
+		String actual = test2.greet("Napoleon");
+		assertEquals(expected, actual);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

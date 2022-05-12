@@ -22,11 +22,5 @@ public class Greeter {
 		return greeting + ", " + name + "!";
 	}
 
-	@Override
-	public String toString() {
-		return greeting;
-
-	}
-
 }
 

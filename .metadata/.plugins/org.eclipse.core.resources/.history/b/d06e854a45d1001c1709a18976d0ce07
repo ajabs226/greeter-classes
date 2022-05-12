@@ -1,0 +1,20 @@
+
+public class LoudGreeter extends Greeter {
+	
+	private String extra = "!!";
+	
+	public LoudGreeter(String greeting) {
+		super(greeting);
+	}
+	
+	@Override
+	public String toString() {
+		return greeting.concat(extra);
+	}
+
+
+
+	public String LoudGreeter(String extra) {
+		return (super.greet(extra));
+	}
+}
